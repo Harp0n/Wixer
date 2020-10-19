@@ -1,0 +1,19 @@
+.dayBody { 
+    overflow-y: scroll;;
+    height: 70vh;
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(black, .25);
+}
+.dayTitle { 
+    margin-left: 1rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #5680E9;
+    font-size: 2rem;
+    font-weight: 700;
+}
