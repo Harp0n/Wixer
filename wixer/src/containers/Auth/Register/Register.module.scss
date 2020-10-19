@@ -1,0 +1,55 @@
+@import '../../../variables';
+
+.Register {
+	margin: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	background-color: map-get($map: $colors, $key: main_blue);
+	width: 100%;
+	height: 100%;
+
+	.Form {
+		margin: 2rem auto;
+		padding: 3rem 1rem;
+		box-sizing: border-box;
+		border-radius: 21px;
+		border: none;
+		background-color: white;
+		width: 85vw;
+        height: auto;
+		position: relative;
+		// top: 15vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: center;
+
+		.DataAuth {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			div:not(:last-of-type) {
+				margin-bottom: 1rem;
+			}
+
+			button {
+				margin-top: 2.1rem;
+				margin-bottom: 2.5rem;
+			}
+		}
+
+		.SignUp {
+			margin-top: 1.7rem;
+			text-align: center;
+			font-weight: 600;
+			font-size: 1.25rem;
+			div {
+				color: rgba($color: #000000, $alpha: 0.4);
+			}
+			a {
+				color: #6171ff;
+			}
+		}
+	}
+}

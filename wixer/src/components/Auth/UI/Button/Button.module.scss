@@ -1,0 +1,24 @@
+@import '../../../../variables';
+
+.Button {
+	margin: 0;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	background-color: white;
+	color: map-get($map: $colors, $key: main_blue);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 8px 13px 1px rgba($color: #000000, $alpha: 0.2);
+	width: 50vw;
+	height: auto;
+	font-size: 1.8rem;
+	-webkit-appearance: value;
+	-moz-appearance: value;
+	appearance: value;
+}
+
+.BtnBlue {
+	@extend .Button;
+	background-color: map-get($map: $colors, $key: main_blue);
+	color: white;
+}

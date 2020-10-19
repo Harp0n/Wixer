@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.AuthTemplate {
+	margin: 0;
+	padding: 5rem 1rem;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+    background-color: map-get($map: $colors, $key: main_blue);
+    // text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	// Button {
+	// 	position: relative;
+    //     top: 15vh;
+        
+    //     &:first-of-type {
+    //         margin-bottom: 2rem;
+    //     }
+		
+    // }
+    
+	// Button:first-of-type {
+	//     position: relative;
+	//     top: 15vh;
+	//     margin-top: 1.5rem;
+	// }
+}

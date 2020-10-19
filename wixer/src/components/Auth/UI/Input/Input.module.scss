@@ -1,0 +1,36 @@
+@import '../../../../variables';
+
+.InputBox {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: map-get($map: $colors, $key: gray_input);
+	border-bottom: 0.2rem solid map-get($map: $colors, $key: gray_input);
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 14rem 1.5rem;
+	grid-template-rows: 1.5rem;
+
+	.Input {
+		padding: 0;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		border: none;
+		// color: map-get($map: $colors, $key: gray_input);
+		font-size: 1.2rem;
+		// border-bottom: 2px solid black;
+		// font-weight: 700;
+
+		&:focus {
+			outline: none;
+			caret-color: map-get($map: $colors, $key: gray_input);
+		}
+	}
+
+	.Image {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		width: 1.25rem;
+		height: auto;
+	}
+}
