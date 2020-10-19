@@ -1,12 +1,13 @@
 .navbar { 
     position: fixed;
-
+    z-index: 100;
     right: .5rem;
     top: .5rem;
     width: 3rem;
     height: 3rem;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(black, .25);
     img { 
         position: absolute;
         top: 50%;

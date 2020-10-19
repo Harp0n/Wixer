@@ -1,16 +1,22 @@
-import React from 'react';
-import { Day } from './containers/Day/Day';
+import React from "react";
+import { Day } from "./containers/Day/Day";
 import "./App.scss";
-import weekDays from './enums/WeekDays';
-import Navigation from './containers/Navigation/Navigation';
-import Week from './containers/Week/Week';
+
+import weekDays from "./enums/weekDays";
+import Navigation from "./containers/Navigation/Navigation";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      {/* <Day weekDay={weekDays.MONDAY} /> */}
-      <Week />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+      </div>
+
+      <Switch>
+        <Route path='/day' render={() => <Day weekDay={weekDays.MONDAY} />} />
+      </Switch>
+    </Router>
   );
 }
 
