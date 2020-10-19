@@ -53,7 +53,7 @@ const Login = (props) => {
 				<SocialButtons />
 				<div className={classes.SignUp}>
 					<div>Don't have an account?</div>
-					<Link to={'/sign-up'}>Sign up</Link>
+					<Link to={'/auth/sign-up'}>Sign up</Link>
 				</div>
 			</form>
 		</div>

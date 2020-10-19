@@ -6,11 +6,11 @@ import Button from '../UI/Button/Button';
 
 const AuthMainPage = (props) => {
 	const onSignInClickedHandler = () => {
-		props.history.push(`${props.match.url}sign-in`);
+		props.history.push(`${props.match.url}/sign-in`);
 	};
 
 	const onSignUpClickedHandler = () => {
-		props.history.push(`${props.match.url}sign-up`);
+		props.history.push(`${props.match.url}/sign-up`);
 	};
 
 	return (

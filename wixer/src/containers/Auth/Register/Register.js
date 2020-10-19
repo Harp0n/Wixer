@@ -65,7 +65,7 @@ const Register = (props) => {
 				<SocialButtons />
 				<div className={classes.SignUp}>
 					<div>Already with us?</div>
-					<Link to={'/sign-in'}>Sign in</Link>
+					<Link to={'/auth/sign-in'}>Sign in</Link>
 				</div>
 			</form>
 		</div>

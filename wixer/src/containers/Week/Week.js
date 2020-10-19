@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Task from '../../enums/Task';
-import weekDays from '../../enums/WeekDays';
+import weekDays from '../../enums/weekDays';
 import classes from './Week.module.scss';
 
 export default function Week() {

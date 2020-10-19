@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./Day.module.scss";
 import Task from "../../components/task/task";
 
-export const Day = (props) => {
+const Day = (props) => {
   const [weekDay, setWeekDay] = useState(props.weekDay);
   const [date, setDate] = useState(props.date);
 
@@ -73,3 +73,5 @@ export const Day = (props) => {
     </div>
   );
 };
+
+export default Day; 
