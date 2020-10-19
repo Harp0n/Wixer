@@ -1,0 +1,13 @@
+.navigationContainer { 
+    position: relative;
+    // background-color: black;
+    height: 10vh;
+}
+
+.logoImage { 
+    height: 2.3rem;
+    position: absolute;
+    top: 50%; 
+    left: 1rem; 
+    transform: translateY(-50%);
+}

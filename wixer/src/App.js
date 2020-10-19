@@ -9,10 +9,12 @@ import Register from './containers/Auth/Register/Register';
 const App = (props) => {
 	return (
 		<React.Fragment>
+      <Navigation />
 			<Switch>
-				<Route path='/sign-in' component={Login} />
-				<Route path='/sign-up' component={Register} />
-				<Route path='/' component={AuthTemplatePage} />
+				<Route path='/auth/sign-in' component={Login} />
+				<Route path='/auth/sign-up' component={Register} />
+				<Route path='/auth' component={AuthTemplatePage} />
+        <Route path='/day' render={() => <Day weekDay={weekDays.MONDAY} />} />
 			</Switch>
 		</React.Fragment>
 	);

@@ -1,0 +1,87 @@
+// * { 
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+// }
+
+.task {
+
+    color: white;
+    width: 80%;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(black, 0.25);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+
+    // justify-content: center;
+    &:first-of-type {
+        margin-top: 2rem;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .dateText {
+        width: 2rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+        border-right: 2px solid white;
+    }
+
+}
+
+.btn {
+    width: 1.2rem;
+    font-size: 0;
+    height: 1.2rem;
+    margin: 0 .5rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px rgba(black, .15);
+    background-size: 100%;
+    background-position: center;
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0px 3px 5px rgba(black, .3);
+
+    }
+}
+
+div.positive {
+    background-color: #60D072;
+}
+
+div.negative {
+    background-color: #E97956;
+}
+
+div.neutral,
+div.new {
+    background-color: #5680E9;
+}
+
+button.positive {
+    background-image: url('../../images/done.svg');
+}
+
+button.negative {
+    background-image: url('../../images/error.svg');
+}
+
+button.new {
+    background-image: url('../../images/add.svg');
+
+}
