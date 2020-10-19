@@ -1,0 +1,21 @@
+@import '../../../variables';
+
+.MainPage {
+	text-align: center;
+
+	button {
+		position: relative;
+        top: 15vh;
+        
+        &:first-of-type {
+            margin-bottom: 2rem;
+        }
+		
+    }
+    
+	// Button:first-of-type {
+	//     position: relative;
+	//     top: 15vh;
+	//     margin-top: 1.5rem;
+	// }
+}

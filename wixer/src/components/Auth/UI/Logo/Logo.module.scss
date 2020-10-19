@@ -1,0 +1,31 @@
+.Logo {
+	position: relative;
+	top: -5vh;
+	// width: 100%;
+	height: auto;
+	&Text {
+		margin: 0.5rem auto;
+		text-align: center;
+		font-size: 1.25rem;
+		color: white;
+	}
+
+	&Image {
+		width: 100%;
+		height: auto;
+		transition: all 0.5s ease-out;
+	}
+
+	transition: all 0.5s ease-out;
+}
+
+.LogoAuth {
+	top: 0vh;
+	width: 80%;
+	height: auto;
+
+	.LogoImage {
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,23 +1,23 @@
-import React from "react";
-import { Day } from "./containers/Day/Day";
-import "./App.scss";
+import React from 'react';
+import './App.css';
+import { Route, Switch } from 'react-router-dom';
 
-import weekDays from "./enums/weekDays";
-import Navigation from "./containers/Navigation/Navigation";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AuthTemplatePage from './components/Auth/AuthTemplatePage';
+import Login from './containers/Auth/Login/Login';
+import Register from './containers/Auth/Register/Register';
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navigation />
-      </div>
-
-      <Switch>
+const App = (props) => {
+	return (
+		<React.Fragment>
+      <Navigation />
+			<Switch>
+				<Route path='/auth/sign-in' component={Login} />
+				<Route path='/auth/sign-up' component={Register} />
+				<Route path='/auth' component={AuthTemplatePage} />
         <Route path='/day' render={() => <Day weekDay={weekDays.MONDAY} />} />
-      </Switch>
-    </Router>
-  );
-}
+			</Switch>
+		</React.Fragment>
+	);
+};
 
 export default App;
