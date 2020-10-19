@@ -9,12 +9,11 @@ import Register from './containers/Auth/Register/Register';
 const App = (props) => {
 	return (
 		<React.Fragment>
-			{/* <Switch>
+			<Switch>
 				<Route path='/sign-in' component={Login} />
 				<Route path='/sign-up' component={Register} />
 				<Route path='/' component={AuthTemplatePage} />
-			</Switch> */}
-			<AuthTemplatePage/>
+			</Switch>
 		</React.Fragment>
 	);
 };

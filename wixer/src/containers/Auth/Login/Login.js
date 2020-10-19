@@ -38,7 +38,7 @@ const Login = (props) => {
 
 	return (
 		<div className={classes.Login}>
-			{/* <Logo auth /> */}
+			<Logo auth />
 			<form className={classes.Form}>
 				<div className={classes.DataAuth}>
 					{inputs}

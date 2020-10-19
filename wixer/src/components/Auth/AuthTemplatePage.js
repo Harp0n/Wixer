@@ -11,12 +11,7 @@ const AuthTemplatePage = (props) => {
 	return (
 		<div className={classes.AuthTemplate}>
 			<Logo />
-			{/* <MainPage /> */}
-			<Switch>
-				<Route path='/sign-in' component={Login} />
-				<Route path='/sign-up' component={Register} />
-				<Route path='/' exact component={MainPage} />
-			</Switch>
+			<MainPage />
 		</div>
 	);
 };
