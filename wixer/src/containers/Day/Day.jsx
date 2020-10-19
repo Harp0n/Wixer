@@ -48,7 +48,7 @@ export const Day = (props) => {
       taskID: prevTasks.length+1, 
       taskType: "neutral", 
       taskTime: "11:59",
-      taskName: "new task!", 
+      taskName: "new task!"
     }
     prevTasks.push(newTask); 
     setTasks(prevTasks); 
